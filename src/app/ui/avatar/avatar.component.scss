@@ -1,0 +1,20 @@
+.avatar {
+  background-image: url("https://i.pinimg.com/originals/22/66/4f/22664facd6c969d8ffc65aedaa296a77.jpg");
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+}
+
+.large {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.xl {
+  width: 15rem;
+  height: 15rem;
+}

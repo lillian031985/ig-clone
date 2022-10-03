@@ -1,0 +1,36 @@
+.container {
+  padding: 2em;
+}
+
+.card-container {
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+}
+
+.tab {
+  padding: 1em;
+  cursor: pointer;
+  position: relative;
+
+  &.active {
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      height: 1px;
+      background: black;
+    }
+  }
+}

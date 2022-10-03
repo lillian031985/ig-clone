@@ -1,0 +1,57 @@
+nav {
+  width: 320px;
+  position: fixed;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1em;
+
+  svg {
+    height: 100px;
+    width: 125px;
+    padding-left: 1em;
+  }
+}
+
+main {
+  margin-left: 320px;
+}
+
+button {
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 0.5em 0.5em;
+  width: 100%;
+}
+
+.avatar {
+  position: absolute;
+
+  &-icon {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+  }
+
+  &-button {
+    ::ng-deep .mat-button-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-text {
+    margin-left: 2.5em;
+  }
+}
+
+.active {
+  font-weight: 600;
+}

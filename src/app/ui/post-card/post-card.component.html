@@ -1,0 +1,50 @@
+<article class="mat-elevation-z1">
+  <div fxLayout="column">
+    <header fxLayout="row" fxLayoutAlign="start center">
+      <app-avatar size="large"></app-avatar>
+      <span fxFlexOffset="1em" class="title">hibreadtree</span>
+    </header>
+
+    <main fxLayout="column">
+      <div>
+        <img src="assets/shark.jpg" alt="" />
+      </div>
+
+      <div class="icon-container" fxLayout="row" fxLayoutAlign="space-between">
+        <div fxLayout="row" fxLayoutGap="0.5em">
+          <mat-icon [ngClass]="{ liked }" (click)="liked = !liked">{{
+            liked ? "favorite" : "favorite_border"
+          }}</mat-icon>
+
+          <mat-icon> chat_bubble_outline</mat-icon>
+
+          <mat-icon>share</mat-icon>
+        </div>
+
+        <div>
+          <mat-icon>turned_in_not</mat-icon>
+        </div>
+      </div>
+
+      <div class="liked-container">
+        <span>littlepopcorn2018和其他1.1 萬人都說讚</span>
+      </div>
+
+      <div class="content-container">
+        <span class="title">hibreadtree</span>
+
+        <p>
+          定期曬黑🌞 more ↓ #麵包樹小虎鯨 ⁡ ༶ 插畫作品 @breadtree.art ༶
+          𝖿𝖺𝖼𝖾𝖻𝗈𝗈𝗄🔎 @hibreadtree ༶ LINE貼圖：麵包樹
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <form novalidate fxLayout="row" [formGroup]="form">
+        <input formControlName="comment" type="text" placeholder="留言……" />
+        <button [disabled]="form.invalid" mat-button type="submit">發佈</button>
+      </form>
+    </footer>
+  </div>
+</article>
