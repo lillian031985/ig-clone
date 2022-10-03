@@ -27,6 +27,7 @@ import {
 })
 export class PostCardComponent implements OnInit {
   @Input() liked = false;
+  @Input() content!: string;
 
   form!: FormGroup;
 

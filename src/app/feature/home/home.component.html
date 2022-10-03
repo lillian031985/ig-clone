@@ -1,6 +1,8 @@
 <section fxLayout="column" fxLayoutAlign="start" fxLayoutGap="2em">
-  <app-post-card></app-post-card>
-  <app-post-card></app-post-card>
-  <app-post-card></app-post-card>
-  <app-post-card></app-post-card>
+  <ng-container *ngIf="cards$ | async as cards">
+    <app-post-card
+      *ngFor="let card of cards"
+      [content]="card.content"
+    ></app-post-card>
+  </ng-container>
 </section>
